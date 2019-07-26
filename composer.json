@@ -1,0 +1,24 @@
+{
+    "name": "devnick/salesforce",
+    "description": "This is a package to link sales force apis",
+    "authors": [
+        {
+            "name": "Nicolas Guarino",
+            "email": "guarino.nicolas.santana@gmail.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "autoload": {
+        "psr-4": {
+            "devnick\\salesforce\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "devnick\\salesforce\\SalesforceServiceProvider"
+            ]
+        }
+    }
+}
