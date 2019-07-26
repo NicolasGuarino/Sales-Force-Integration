@@ -1,6 +1,6 @@
 <?php
 
-namespace devnice\salesforce\Services;
+namespace devnick\salesforce\Services;
 use GuzzleHttp\Client;
 
 class GeneralService
