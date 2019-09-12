@@ -13,10 +13,13 @@ class SetDataExtension
         $this->client = $client;
     }
 
-    public function execute($data_extension, $params){
+    public function execute($data_extension, $params, $url = null){
         try
         {    
             $base_uri = config('salesforce.url.data_extension.row_set');
+            if($url){
+                $base_uri = $url;
+            }
             $uri = $base_uri . "key:" . $data_extension . "/rowset";
 
             $response = $this->client->request('POST', $uri, [
